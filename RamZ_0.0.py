@@ -31,4 +31,7 @@ def listen():
     return "Hello"
 
 
+speak("Say something!, Amhar")
+# speak("I am running now")
+# speak("I have an error")
 speak("I heard you say " + listen())
