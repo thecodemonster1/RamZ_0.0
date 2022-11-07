@@ -19,9 +19,10 @@ def listen():
         audio = recognizer.listen(source)
 
     try:
-        return recognizer.recognize_sphinx(audio)
+        # return recognizer.recognize_bing(audio)
+        return recognizer.recognize_sphinx(audio)  # any of one
         # speak("I am running now")
-        # or: return recognizer.recognize_google(audio)
+        # return recognizer.recognize_google(audio)
     except speech_recognition.UnknownValueError:
         print("Could not understand audio")
 
